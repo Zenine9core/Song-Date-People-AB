@@ -18,7 +18,43 @@
       text-transform: uppercase;
       letter-spacing: 2px;
     }
+    
+      <title>Teks Bergerak Glow</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #444, #111); /* abu → hitam */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
 
+    .running-text {
+      position: absolute;
+      top: 30px; /* jarak dari atas */
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .running-text span {
+      display: inline-block;
+      padding-left: 100%;
+      font-size: 36px;
+      font-weight: bold;
+      color: #FFD700; /* kuning emas */
+      text-shadow: 
+        0 0 5px #FFD700,
+        0 0 10px #FFD700,
+        0 0 20px #FFA500,
+        0 0 40px #FF8C00; /* efek glow */
+      animation: scroll 12s linear infinite;
+    }
+
+    
     /* Logo bulat */
     .logo {
   width: 120px;
@@ -84,13 +120,18 @@
       width: 100%;
     }
 
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(10px);}
-      to {opacity: 1; transform: translateY(0);}
+    @keyframes scroll {
+      0%   { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
     }
   </style>
 </head>
 <body>
+  <div class="running-text">
+    <span>TEKNIK ALAT BERAT ANGKATAN 2025/2028</span>
+  </div>
+</body>
+</html>
   <!-- Logo kelas -->
   <img src="https://files.catbox.moe/6hjefm.jpg" alt="" class="logo">
   <h1>𝗙𝗮𝘃𝗼𝗿𝗶𝘁𝗲 𝗦𝗼𝗻𝗴 & 𝗗𝗮𝘁𝗲 𝗣𝗲𝗼𝗽𝗹𝗲</h1>
@@ -111,12 +152,12 @@
     </audio>
   </div>
 
-  <button class="btn" onclick="toggleDetail('detail1')">Alifah</button>
-  <div id="detail1" class="detail">
+  <button class="btn" onclick="toggleDetail('detail2')">Alifah</button>
+  <div id="detail2" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
-        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Date:</b> 02 Jan 2005</p>
         <p><b>Favorite Song:</b> About You - The 1975</p>
       </div>
     </div>
@@ -126,8 +167,8 @@
     </audio>
   </div>
 
-  <button class="btn" onclick="toggleDetail('detail1')">Arif</button>
-  <div id="detail1" class="detail">
+  <button class="btn" onclick="toggleDetail('detail3')">Arif</button>
+  <div id="detail3" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -141,8 +182,8 @@
     </audio>
   </div>
   
-  <button class="btn" onclick="toggleDetail('detail1')">Arya</button>
-  <div id="detail1" class="detail">
+  <button class="btn" onclick="toggleDetail('detail4')">Arya</button>
+  <div id="detail4" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -156,8 +197,8 @@
     </audio>
   </div>
   
-  <button class="btn" onclick="toggleDetail('detail1')">Farros</button>
-  <div id="detail1" class="detail">
+  <button class="btn" onclick="toggleDetail('detail5')">Farros</button>
+  <div id="detail5" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -171,8 +212,8 @@
     </audio>
   </div>
   
-  <button class="btn" onclick="toggleDetail('detail1')">Fahri</button>
-  <div id="detail1" class="detail">
+  <button class="btn" onclick="toggleDetail('detail6')">Fahri</button>
+  <div id="detail6" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -186,8 +227,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Halim</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail7')">Halim</button>
+  <div id="detail7" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -201,8 +242,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Fakri</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail8')">Fakri</button>
+  <div id="detail8" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -216,8 +257,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Chandra</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail9')">Chandra</button>
+  <div id="detail9" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -231,8 +272,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Rifqi</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail10')">Rifqi</button>
+  <div id="detail10" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -246,8 +287,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Rafi</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail11')">Rafi</button>
+  <div id="detail11" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -261,8 +302,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Yusuf</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail12')">Yusuf</button>
+  <div id="detail12" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -276,8 +317,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Sobri</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail13')">Sobri</button>
+  <div id="detail13" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -291,8 +332,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Zikri</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail14')">Zikri</button>
+  <div id="detail14" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -306,8 +347,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Nadya</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail15')">Nadya</button>
+  <div id="detail15" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -321,8 +362,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Keys</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail16')">Keys</button>
+  <div id="detail16" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -336,8 +377,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Naufal</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail17')">Naufal</button>
+  <div id="detail17" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -351,8 +392,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Putri</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail18')">Putri</button>
+  <div id="detail18" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -366,8 +407,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Weki</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail19')">Weki</button>
+  <div id="detail19" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
@@ -381,8 +422,8 @@
     </audio>
   </div>
   
-   <button class="btn" onclick="toggleDetail('detail1')">Zaki</button>
-  <div id="detail1" class="detail">
+   <button class="btn" onclick="toggleDetail('detail20')">Zaki</button>
+  <div id="detail20" class="detail">
     <div class="info">
       <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
       <div>
