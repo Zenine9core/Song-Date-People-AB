@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Siswa dengan Audio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      margin: 15px 0 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Logo bulat */
+    .logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid gold;
+}
+
+    .btn {
+      display: block;
+      width: 90%;
+      max-width: 400px;
+      margin: 12px auto;
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      background: linear-gradient(135deg, #000, #FFD700);
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(255,215,0,0.6);
+    }
+
+    .detail {
+      display: none;
+      margin: 15px auto;
+      padding: 18px;
+      border-radius: 16px;
+      background: #222;
+      color: #fff;
+      max-width: 400px;
+      text-align: left;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      animation: fadeIn 0.4s ease;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .info img {
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+      border: 2px solid #FFD700;
+      object-fit: cover;
+    }
+
+    audio {
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo kelas -->
+  <img src="https://files.catbox.moe/6hjefm.jpg" alt="" class="logo">
+  <h1>𝗙𝗮𝘃𝗼𝗿𝗶𝘁𝗲 𝗦𝗼𝗻𝗴 & 𝗗𝗮𝘁𝗲 𝗣𝗲𝗼𝗽𝗹𝗲</h1>
+
+  <!-- Siswa 1 -->
+  <button class="btn" onclick="toggleDetail('detail1')">Afiq</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+
+  <button class="btn" onclick="toggleDetail('detail1')">Alifah</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+
+  <button class="btn" onclick="toggleDetail('detail1')">Arif</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+  <button class="btn" onclick="toggleDetail('detail1')">Arya</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+  <button class="btn" onclick="toggleDetail('detail1')">Farros</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+  <button class="btn" onclick="toggleDetail('detail1')">Fahri</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Halim</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Fakri</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Chandra</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Rifqi</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Rafi</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Yusuf</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Sobri</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Zikri</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Nadya</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Keys</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Naufal</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Putri</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Weki</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+   <button class="btn" onclick="toggleDetail('detail1')">Zaki</button>
+  <div id="detail1" class="detail">
+    <div class="info">
+      <img src="https://files.catbox.moe/kkx4up.jpg" alt="Cover Lagu">
+      <div>
+        <p><b>Date:</b> 01 Jan 2005</p>
+        <p><b>Favorite Song:</b> About You - The 1975</p>
+      </div>
+    </div>
+    <audio controls>
+      <source src="https://files.catbox.moe/jqo2f6.wav" type="audio/wav">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+  
+  
+
+  <script>
+    function toggleDetail(id) {
+      const box = document.getElementById(id);
+      box.style.display = (box.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
